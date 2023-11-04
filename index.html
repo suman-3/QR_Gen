@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR_Code_genaretor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="icons/all.min.css">
+    <link rel="stylesheet" href="icons/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2>.mon QR</h2>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <p>Enter Your Text Or URL</p>
+            <input type="text" placeholder="Text or Url" id="qrText">
+            <div class="imgBox" id="imgBox" draggable="true">
+                <img src="" id="qrImage">
+            </div>
+            <button onclick="generateQR()">Genarate QR Code</button>
+            <div class="button2">
+                <button class="close">Close</button>
+                <button class="download">Download</button>
+            </div>
+        </div>
+
+        <div class="container2">
+            <form action="#">
+                <input type="file" hidden>
+                <img src="">
+                <div class="content">
+                    <i class="fas fa-cloud-upload"></i>
+                    <p>Upload Your QR Code to scan</p>
+                </div>
+            </form>
+            <div class="details">
+                <textarea disabled></textarea>
+                <div class="button">
+                    <button class="close">Close</button>
+                    <button class="copy">Copy Text</button>
+                </div>
+                </form>
+            </div>
+        </div>
+         <script src="FileSaver.js-2.0.2/dist/FileSaver.min.js"></script> 
+        <script src="script.js"></script>
+</body>
+
+</html>
